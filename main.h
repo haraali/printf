@@ -21,5 +21,7 @@ void _print_char(va_list *args);
 void _print_string(va_list *args);
 void _print_int(va_list *args);
 void _print_percent(va_list *args);
+=======
+int _printf(const char *format, ...);
 
 #endif
