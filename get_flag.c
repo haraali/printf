@@ -11,7 +11,7 @@
  *
  * Return: the flag representing the flags
  */
-int get_flags(const char *format, const int *i)
+int get_flags(const char *format, int *i)
 {
 	int current_index = *i + 1;
 	int flags = 0;

@@ -1,8 +1,5 @@
 #include "main.h"
 
-#define S_LONG 4
-#define S_SHORT 2
-
 /**
  * get_size - extracts the size of a variable modifier from a format string
  * @format: the format string

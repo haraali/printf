@@ -12,7 +12,7 @@
  *
  * Return: the width of the field or 0 if there's no width specified
  */
-int get_width(const char *format, const int *i, va_list list)
+int get_width(const char *format, int *i, va_list list)
 {
 	int current_index = *i + 1;
 	int width = 0;
