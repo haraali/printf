@@ -36,17 +36,6 @@ specifiers followed by optional arguments. The format specifiers are
 replaced by the corresponding values of the arguments, and the resulting
 string is printed to stdout.
 
-Example:
-
-#include \"main.h\" int main(void) { char c = \'H\'; char \*s =
-\"Hello\"; int num = 123; \_printf(\"Character: %c\\n\", c);
-\_printf(\"String: %s\\n\", s); \_printf(\"Literal Percentage: %%\\n\");
-\_printf(\"Decimal Number: %d\\n\", num); return 0; }
-
-Output:
-
-Character: H String: Hello Literal Percentage: % Decimal Number: 123
-
 ## **Notes**
 
 -   \_printf currently does not support all the advanced features and
@@ -71,7 +60,7 @@ function prototypes and necessary macros.
 
 \_printf can be compiled using a C compiler with the following command:
 
-gcc -Wall -Werror -Wextra -pedantic \*.c -o printf
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format \*.c -o printf
 
 ## **Author**
 
